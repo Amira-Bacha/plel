@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer {
+    height: 45vh;
+    min-height: 300px;
+    width: 100%;
+    background-color: #0E2256;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.FstPart {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.FooterLogo h1 {
+    color: #F8C498;
+    font-size: 40px;
+}
+
+.FooterLogo p {
+    margin-left: 50px;
+    font-size: 12px;
+}
+
+.Adress {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: space-evenly;
+}
+
+.ScPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    color: white;
+    height: 80%;
+}
+
+.ScPart h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ScPart p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.ThrdPart {
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+    color: white;
+}
+
+.ThrdPart h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.social {
+    margin-top: 40px;
+    color: #F8C498;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FrthPart {
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+    color: white;
+}
+
+.FrthPart h1 {
+    font-size: 32px;
+}
+
+.SignUpFooter {
+    display: flex;
+    margin-top: 50px;
+    height: 65px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+}
+
+.SignUpFooter input {
+    height: 65px;
+    width: 300px;
+    background: none;
+    border: none;
+    outline: none;
+    margin: 0 10px;
+    color: white;
+}
+
+.SignUpFooter input::placeholder {
+    color: white;
+}
+
+.SignUpButtonFooter {
+    height: 65px;
+    width: 180px;
+    border-radius: 12px;
+    border: none;
+    background-color: #FFD2A4;
+    cursor: pointer;
+}
+
+.SignUpButtonFooter p {
+    color: #1d281c;
+    font-size: 18px;
+    font-weight: 900px;
+}
+
+@media (max-width:1200px) {
+    .SignUpFooter input {
+        width: 200px;
+    }
+}
+
+@media (max-width:880px) {
+    .footer {
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 20px;
+        align-items: center;
+    }
+    .FstPart {
+        align-items: flex-start;
+        height: 100%;
+        width: 50%;
+    }
+    .ScPart {
+        align-items: flex-start;
+        height: 100%;
+        width: 50%;
+    }
+    .ThrdPart {
+        flex-direction: row;
+        align-items: flex-start;
+        height: 100%;
+        width: 50%;
+    }
+    .social {
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    .FrthPart {
+        align-items: flex-start;
+        height: 100%;
+        width: 50%;
+    }
+    .SignUpFooter {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width:740px) {
+    .FrthPart h1 {
+        font-size: 4vw;
+    }
+    .SignUpFooter {
+        height: 8vw;
+    }
+    .SignUpFooter input {
+        height: 8vw;
+        width: 60%;
+    }
+    .SignUpButtonFooter {
+        height: 8vw;
+        width: 150px;
+    }
+    .SignUpButtonFooter p {
+        font-size: 2.5vw;
+    }
+}

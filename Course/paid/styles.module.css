@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.nav {
+    width: 100%;
+    height: 130px;
+}
+
+.scndNav {
+    width: 97%;
+    height: 60px;
+    margin: auto;
+    border-radius: 13px;
+    border: 3px solid #6FC2D0;
+    display: flex;
+    justify-content: end;
+}
+
+.Links {
+    width: 100%;
+    flex: 2;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.Links a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.nav_btn {
+    font-size: 22px;
+    color: #1C4B82;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+.nav_btn_special {
+    composes: nav_btn;
+    border: 2px solid #FFA41B;
+    padding: 5px;
+    border-radius: 14px;
+}
+
+.nav_btn_special:hover {
+    border: 2px solid #1C4B82;
+    color: #FFA41B;
+    padding: 5px;
+    border-radius: 14px;
+}
+
+.search {
+    flex: 1.4;
+    display: flex;
+    justify-content: end;
+}
+
+.search input {
+    height: 50%;
+    align-self: center;
+    margin-right: 60px;
+    border: 2.5px solid #9B0000;
+    border-radius: 20px;
+    width: 50%;
+    padding: 0 10px;
+}
+
+@media (max-width:756px) {
+    .search {
+        justify-content: center;
+    }
+    .search input {
+        margin-right: 0px;
+        width: 70%;
+    }
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.firstNav {
+    width: 95%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+}
+
+.logo {
+    flex: 1;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1C4B82;
+    align-self: center;
+}
+
+.logo p {
+    color: #1C4B82;
+}
+
+.contact {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+.nav_btn_special_contact {
+    composes: nav_btn;
+    border: 2px solid #1C4B82;
+    padding: 5px 10px;
+    border-radius: 14px;
+}
+
+.nav_btn_special_contact:hover {
+    color: white;
+    background-color: #1C4B82;
+    padding: 5px 10px;
+    border-radius: 14px;
+}
+
+.language {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #1C4B82;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.language img {
+    width: 50px;
+    height: 50px;
+}
+
+.language p {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/*///////////////////////*/
+
+
+/*/////////ENDNAV////////////////////*/
+
+.MotherDivCourse {
+    background: url('../../assets/courseBack.png') no-repeat top;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainDivCourse {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftSectionCourse {
+    /* background-color: #6FC2D0; */
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FirsSectionInfoCourse {
+    background-color: #ffffff;
+    /* border: 3px solid #0E2256; */
+    box-shadow: inset 0 0 7px 2px #0e3dd93d, 0 0 5px 2px #0e3dd93d;
+    border-radius: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 70%;
+    height: 30vh;
+    min-height: 200px;
+    min-width: 650px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.FirsSectionInfoCourseTitle {
+    margin: 50px 10px;
+}
+
+.FirsSectionInfoCourseTitle h4 {
+    margin: 0 2px;
+    color: #525252;
+}
+
+.Btn_Div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 45%;
+    height: 100%;
+}
+
+.imgCourse {
+    max-width: 200px;
+    max-height: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 50px;
+    margin: auto;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.16);
+}
+
+.imgCourse img {
+    position: relative;
+    height: 200px;
+    margin: auto;
+}
+
+.rightSectionCourse {
+    position: fixed;
+    /* background-color: #1c822d; */
+    width: 25%;
+    height: 60vh;
+    right: 90px;
+    bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scndInfos {
+    padding: 20px 0;
+    background-color: white;
+    height: 90%;
+    width: 90%;
+    position: sticky;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
+    display: block;
+    transition: margin-top 1s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.InfosRefDur {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    font: bolder 20px "Nunito", sans-serif;
+}
+
+.InfosRefDur span {
+    font: 400 20px "Nunito", sans-serif;
+}
+
+.InfosDates {
+    width: 90%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.radioTitle {
+    color: black;
+    font: bolder 20px "Nunito", sans-serif;
+}
+
+.radioLable {
+    color: rgb(95, 95, 95);
+    font: 400 20px "Nunito", sans-serif;
+}
+
+.CoursePriceInfoPage {
+    width: 90%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    font: bold 35px "Nunito", sans-serif;
+}
+
+.CourseButtonsInfoPage {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.CourseButtonsInfoPage button {
+    width: 90%;
+    height: 50px;
+    margin: 5px 10px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font: 500 20px "Nunito", sans-serif;
+    cursor: pointer;
+}
+
+#CourseButtonsInfoPageB1 {
+    background-color: #3867C2;
+    /* transition: background-color 0.5s ease-out; */
+}
+
+#CourseButtonsInfoPageB1Disabled {
+    background-color: grey;
+    cursor: not-allowed;
+    /* transition: background-color 0.5s ease-out; */
+}
+
+#CourseButtonsInfoPageB2 {
+    background-color: #427CFF;
+    opacity: 72%;
+}
+
+#CourseButtonsInfoPageB2Disabled {
+    background-color: grey;
+    cursor: not-allowed;
+    opacity: 72%;
+    /* transition: background-color 0.5s ease-out; */
+}
+
+.ModalComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    text-align: center;
+}
+
+.ModalTitle {
+    text-align: center;
+}
+
+.Date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 94%;
+    margin: 5px 20px;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 0px #4e4e4e;
+    padding: 10px;
+}
+
+.DatePicker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 10px;
+    height: auto;
+}
+
+.DatePickedDiplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    height: 100px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.ValidateIcon {
+    margin: auto 5px;
+    cursor: pointer;
+}
+
+.Btn_save {
+    height: 50px;
+    margin-bottom: 0;
+}
+
+.ScndSectionInfoCourse {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.DescriptionInfoCourse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 20px;
+    width: 80%;
+}
+
+.DescriptionInfoCourseTitle {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px
+}
+
+.DescriptionInfoCourseText {
+    width: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    font: 500 20px "Nunito", sans-serif;
+    border: 2px solid #525252;
+    border-radius: 5px;
+}
+
+
+/*//////////////////FOOTER////////////////////////////*/
+
+.footer {
+    height: 40vh;
+    width: 100%;
+    background-color: #0E2256;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 3fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.FstPart {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.FooterLogo h1 {
+    color: #F8C498;
+    font-size: 40px;
+}
+
+.FooterLogo p {
+    margin-left: 50px;
+    font-size: 12px;
+}
+
+.Adress {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: space-evenly;
+}
+
+.ScPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    color: white;
+    height: 80%;
+}
+
+.ScPart h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ScPart p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.ThrdPart {
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+    color: white;
+}
+
+.ThrdPart h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.social {
+    margin-top: 40px;
+    color: #F8C498;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FrthPart {
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+    color: white;
+}
+
+.FrthPart h1 {
+    font-size: 32px;
+}
+
+.SignUpFooter {
+    display: flex;
+    margin-top: 50px;
+    height: 65px;
+    width: 80%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+}
+
+.SignUpFooter input {
+    height: 65px;
+    width: 300px;
+    background: none;
+    border: none;
+    outline: none;
+    margin: 0 10px;
+    color: white;
+}
+
+.SignUpFooter input::placeholder {
+    color: white;
+}
+
+.SignUpButtonFooter {
+    height: 65px;
+    width: 180px;
+    border-radius: 12px;
+    border: none;
+    background-color: #FFD2A4;
+}
+
+.SignUpButtonFooter p {
+    color: #1d281c;
+    font-size: 18px;
+    font-weight: 900px;
+}
+
+
+/**********************************/
+
+.OpinionsCourse {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 20px;
+    border: 1px dashed #525252;
+    border-radius: 15px;
+}
+
+.OpinionsCourseTitle {
+    margin: 5px 10px;
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px
+}
+
+.opinion {
+    width: 90%;
+    margin: auto;
+}
+
+.opinionHeader {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px
+}
+
+.opinionBody {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.opinionHr {
+    border-top: 1px dashed #525252;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    /* background-color: #525252;
+    border: none; */
+    width: 70%;
+    margin: 10px auto;
+    height: .5px;
+}
+
+.Accordion {
+    width: 95%;
+    margin: auto;
+}
+
+.AlertOfResult {
+    width: 94%;
+    margin: 10px auto;
+    height: auto;
+    border-radius: 5px;
+    border: 2px dashed rgb(255, 187, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.percentSuccess {
+    margin: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #388e3c;
+}
+
+.percentDanger {
+    margin: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #b71c1c;
+}
+
+.AlertOfResult h3,
+h2,
+h5 {
+    font-weight: bold;
+    margin: 5px 10px;
+}
+
+.Reponse {
+    display: flex;
+    align-items: center;
+}
+
+.Reponse p {
+    margin: 5px 10px;
+}
+
+.Danger {
+    color: rgb(197, 1, 1)
+}
+
+.Success {
+    color: rgb(0, 135, 9)
+}
+
+
+/**********************************************************************/

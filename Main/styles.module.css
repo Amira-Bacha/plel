@@ -1,0 +1,931 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+
+/*////////////SECTION ONE/////////////////*/
+
+.sectionOne {
+    width: 100%;
+    height: 82.5vh;
+    min-height: 500px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.motivationDiv {
+    align-self: center;
+    width: 93%;
+    height: 92%;
+    margin: auto;
+    border-radius: 50px;
+    background-image: url('../assets/MotivationBackground.png');
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 500px;
+}
+
+.motivationQuotes {
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 100px;
+}
+
+.motivationQuotes h1 {
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+}
+
+.motivationQuotes h5 {
+    font-size: 2vw;
+    font-weight: 600;
+    color: #E5E5E5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.motivationQuotes span {
+    font-size: 24px;
+}
+
+.Motivation_btn {
+    width: 228px;
+    height: 70px;
+    border-radius: 13px;
+    background: linear-gradient(135deg, rgba(52, 90, 164, 1) 0%, rgba(63, 0, 156, 0.92) 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.motivationImg {
+    flex: 1;
+    background-image: url('../assets/WorkingProcess.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width:1465px) {
+    .motivationQuotes h1 {
+        font-size: 60px;
+    }
+    .motivationQuotes h5 {
+        font-size: 24px;
+    }
+    .motivationQuotes span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1115px) {
+    .motivationQuotes h1 {
+        font-size: 50px;
+    }
+    .motivationQuotes h5 {
+        font-size: 20px;
+    }
+    .motivationQuotes span {
+        font-size: 10px;
+    }
+    .motivationImg {
+        background-size: contain;
+    }
+}
+
+@media (max-width:958px) {
+    .motivationQuotes h1 {
+        font-size: 45px;
+    }
+    .motivationQuotes h5 {
+        font-size: 15px;
+    }
+    .motivationQuotes span {
+        font-size: 7px;
+    }
+}
+
+@media (max-width:885px) {
+    .motivationDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+    .motivationQuotes {
+        padding-left: 0px;
+    }
+    .motivationImg {
+        display: none;
+    }
+}
+
+
+/*////////////SECTION TWO/////////////////*/
+
+.imgTop {
+    border-bottom: 1px solid #706f6f5a;
+}
+
+.sectionTwo {
+    width: 100%;
+    height: 73vh;
+    min-height: 450px;
+    margin: 20px 0;
+}
+
+.sectionTwo h1 {
+    margin: 20px 100px;
+    font-size: 36px;
+    color: black;
+    height: 60px;
+}
+
+.topTrainingElements {
+    width: 100%;
+    height: 380px;
+    max-height: 380px;
+    min-height: 380px;
+    background-color: #EEEEEE;
+    display: block;
+    padding: 0;
+}
+
+.inner_carousel {
+    display: flex;
+    /* background: lightblue; */
+}
+
+.carousel {
+    cursor: grab;
+    overflow: hidden;
+    /* background: rgb(230, 173, 173); */
+    margin: 0 50px;
+}
+
+.topTrainingElement {
+    background-color: white;
+    width: 19rem;
+    min-width: 19rem;
+    max-width: 19rem;
+    height: 21.4rem;
+    margin: 15px 20px;
+}
+
+.infoCourse {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardCategory {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: #818181;
+    margin: 5px 15px;
+    /*border-top: 1px solid #E0E0E0;*/
+}
+
+.cardCategoryHr {
+    background-color: #75D349;
+    width: 50px;
+    height: 1px;
+    border: none;
+    border-radius: 50px;
+    margin-top: -4.5px;
+    margin-left: 14px;
+}
+
+.cardTitle {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #343434;
+    padding: 8px 15px;
+}
+
+.cardCenterHr {
+    background-color: #E0E0E0;
+    width: 150px;
+    height: 1px;
+    border: none;
+    border-radius: 50px;
+    align-self: center;
+}
+
+.cardLevel {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #343434;
+    margin: 16.5px 15px;
+}
+
+.cardLevel span {
+    color: #706F6F;
+}
+
+.cardFooter {
+    display: grid;
+    grid-template-columns: 2.3fr 2fr 1fr;
+    height: 56px;
+}
+
+.cardFooter p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #343434;
+    margin: 15px 15px;
+    align-self: center;
+}
+
+.cardFooter button {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #345AA4;
+    border: none;
+    border-radius: 33px;
+    width: 101px;
+    height: 29px;
+    align-self: center;
+}
+
+.triangle {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, transparent 50%, #53C81C 0);
+}
+
+
+/*////////////SECTION THREE/////////////////*/
+
+.sectionThree {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.CatalogContainer {
+    width: 95%;
+    height: auto;
+    background-color: #0E2256;
+    border-radius: 50px;
+    margin: auto;
+    align-self: center;
+    display: flex;
+}
+
+.MenuContainer {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalogTitleBack {
+    margin: 70px 0;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.catalogTitleBack p {
+    background-color: #223566;
+    width: 70%;
+    height: 59px;
+    border-radius: 12px;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.catalogcategoriesBack {
+    height: 70%;
+    display: flex;
+    align-items: start;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.catalogcategories {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 95px;
+}
+
+.catalogcategoriesButton {
+    margin: 20px 0;
+    margin-left: 30px;
+    width: 80%;
+    height: 54px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: #0E2256;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.catalogcategoriesButton:hover {
+    background-color: white;
+    color: #0E2256;
+    position: relative;
+}
+
+.catalogcategoriesButton:hover::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px white;
+    pointer-events: none;
+}
+
+.catalogcategoriesButton:hover::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px white;
+    pointer-events: none;
+}
+
+.catalogcategoriesButtonText {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 0 25px;
+}
+
+.CoursesContainer {
+    width: 80%;
+    height: auto;
+    display: flex;
+}
+
+.Back {
+    width: 97%;
+    height: 95%;
+    margin: 30px 0;
+    background-color: white;
+    border-radius: 50px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.CatalogueTypes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 100%;
+}
+
+.Header {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.searchBar {
+    display: flex;
+    width: 80%;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #ECECEC;
+}
+
+.DivSearchIcon {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBar input {
+    width: 90%;
+    background-color: none;
+    background: none;
+    border: none;
+    outline: none;
+    margin: 0 10px;
+}
+
+.searchBar input::placeholder {
+    color: #676767;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.Button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FFA41B;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.rightContainer {}
+
+.mainCourses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+}
+
+.TypeCourses {
+    display: block;
+    border-bottom: 1px solid #BCBCBC;
+    width: 90%;
+    border-bottom-left-radius: 22px;
+}
+
+.ButtonCourseType {
+    width: 200px;
+    height: 43px;
+    background-color: white;
+    border: 1px solid #E4E4E4;
+    border-top-right-radius: 22px;
+    border-bottom-left-radius: 22px;
+    outline: none;
+    position: relative;
+}
+
+.ButtonCourseType1 {
+    composes: ButtonCourseType;
+    z-index: 3;
+}
+
+.ButtonCourseType2 {
+    composes: ButtonCourseType;
+    margin-left: -20px;
+    z-index: 2;
+}
+
+.ButtonCourseType3 {
+    composes: ButtonCourseType;
+    margin-left: -40px;
+    z-index: 1;
+}
+
+.ListCourses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    max-height: 800px;
+    min-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.Courses {
+    width: 325px;
+    height: 154px;
+    background-color: white;
+    box-shadow: -2px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    margin: auto;
+}
+
+.display {
+    display: flex;
+}
+
+.imgCourse {
+    width: 90px;
+    height: 80px;
+    border: 2px solid #ABABAB;
+    border-radius: 20px;
+    margin: 20px 10px;
+}
+
+.ListCoursesInfoCourse {
+    display: flex;
+    padding: 25px 5px;
+    width: 190px;
+    flex-direction: column;
+}
+
+.ListCoursesCardCategory {
+    font-size: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    color: #818181;
+}
+
+.ListCoursesCardCategoryHr {
+    background-color: #75D349;
+    width: 50px;
+    height: 1px;
+    border: none;
+    border-radius: 50px;
+}
+
+.ListCoursesCardTitle {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #343434;
+    margin: 5px 0px;
+}
+
+.ListCoursesCardCenterHr {
+    width: 110px;
+    align-self: center;
+    background-color: #E0E0E0;
+    height: 1px;
+    border: none;
+    border-radius: 50px;
+}
+
+.ListCoursesCardLevel {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #343434;
+    margin: 5px 0px;
+}
+
+.ListCoursesCardLevel span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #706F6F;
+    margin: 10px 0px;
+}
+
+.ListCoursesFooter {
+    display: flex;
+    width: 100%;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+
+.ListCoursesCardRating {
+    flex: 2;
+    align-self: center;
+    color: #818181;
+}
+
+.priceFooter {
+    flex: 1;
+    color: #343434;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    align-self: center;
+}
+
+.MuiBox {
+    width: 200px;
+}
+
+@media (max-width:1330px) {
+    .ListCourses {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        padding: 10px;
+        width: 90%;
+        height: auto;
+    }
+}
+
+
+/*////////////SECTION FOUR/////////////////*/
+
+.sectionFour {
+    background-color: #EEEEEE;
+    width: 100%;
+    height: 70vh;
+    min-height: 500px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sectionFour h1 {
+    font-size: 40px;
+    font-family: 'Nunito';
+    font-weight: 700;
+}
+
+.OurTrainers {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.trainer {
+    width: 28%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+    border-radius: 43px;
+}
+
+.ImgTrainer {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 1px solid #818181;
+}
+
+.ImgTrainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.TrainerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.TrainerInfo h1 {
+    font-size: 2.2vw;
+}
+
+.TrainerInfo h2 {
+    font-size: 2.1vw;
+    color: #828282;
+}
+
+@media (max-width:1000px) {
+    .ImgTrainer {
+        width: 150px;
+        height: 150px;
+    }
+    .trainer {
+        height: 300px;
+    }
+}
+
+@media (max-width:880px) {
+    .sectionFour {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        border-radius: 43px;
+        margin-top: 100px !important;
+    }
+    .sectionFour h1 {
+        margin: 10px;
+        font-size: 30px;
+    }
+    .OurTrainers {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .trainer {
+        width: 60%;
+        height: 300px;
+        margin: 20px 50px;
+    }
+    .ImgTrainer {
+        width: 150px;
+        height: 150px;
+    }
+    .TrainerInfo h1 {
+        font-size: 4vw;
+    }
+    .TrainerInfo h2 {
+        font-size: 3.8vw;
+    }
+}
+
+
+/*////////////SECTION FIVE/////////////////*/
+
+.sectionFive {
+    width: 100%;
+    height: 60vh;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectionFive h1 {
+    font-size: 40px;
+    font-family: 'Nunito';
+    font-weight: 700;
+}
+
+.OurPartners {
+    width: 90%;
+    height: 40%;
+    background-color: #EEEEEE;
+    border-radius: 44px;
+    display: inline-block;
+}
+
+.OurPartners div {
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.OurPartners div img {
+    margin: 25px;
+}
+
+
+/*////////////SECTION SIX/////////////////*/
+
+.sectionSix {
+    width: 100%;
+    height: 100vh;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/Education.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: cover;
+}
+
+.TextSectionSix {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.TextSectionSix h1 {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 900;
+    text-shadow: 0px 4px 8px black;
+}
+
+.TextSectionSix h2 {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 37px;
+    font-weight: 700;
+    text-shadow: 0px 4px 9px black;
+}
+
+.ButtonSectionSix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.ApplyButton {
+    width: 650px;
+    height: 120px;
+    background-color: rgba(0, 56, 181, 0.62);
+    color: white;
+    font-size: 71px;
+    font-weight: 500;
+    box-shadow: 0px 4px 10px black;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width:1400px) {
+    .TextSectionSix h1 {
+        font-size: 54px;
+    }
+    .TextSectionSix h2 {
+        font-size: 31px;
+    }
+    .ButtonSectionSix {
+        margin: 60px 0;
+    }
+    .ApplyButton {
+        width: 546px;
+        height: 100px;
+        font-size: 60px;
+    }
+    .sectionSix {
+        height: 80vh;
+    }
+}
+
+@media (max-width:1130px) {
+    .TextSectionSix h1 {
+        font-size: 43px;
+    }
+    .TextSectionSix h2 {
+        font-size: 24px;
+    }
+    .ButtonSectionSix {
+        margin: 48px 0;
+    }
+    .ApplyButton {
+        width: 436px;
+        height: 80px;
+        font-size: 48px;
+    }
+    .sectionSix {
+        height: 70vh;
+    }
+}
+
+@media (max-width:990px) {
+    .sectionSix {
+        height: 60vh;
+    }
+}
+
+@media (max-width:850px) {
+    .TextSectionSix h1 {
+        font-size: 21.5px;
+    }
+    .TextSectionSix h2 {
+        font-size: 12px;
+    }
+    .ButtonSectionSix {
+        margin: 24px 0;
+    }
+    .ApplyButton {
+        width: 218px;
+        height: 40px;
+        font-size: 24px;
+    }
+    .sectionSix {
+        height: 34.8vh;
+    }
+}

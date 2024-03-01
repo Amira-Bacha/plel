@@ -1,0 +1,81 @@
+* {
+    margin: none;
+    padding: none;
+}
+
+.leftSectionProfile {
+    /* background-color: #6FC2D0; */
+    width: 90%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.FirsSectionInfoProfile {
+    /* background-color: #6fd0b3; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.FirsSectionInfoProfileName {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FirsSectionInfoProfileName p {
+    color: #414141;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.ScndSectionInfoProfile {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ScndSectionInfoProfileContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70%;
+    height: auto;
+    margin-bottom: 50px;
+    border: 2px solid #1C4B82;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+.editIconDiv {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.editIcon {
+    margin: 8px 15px;
+}
+
+.ScndSectionInfoProfileContainer p {
+    margin: 5px 50px;
+}
+
+.ScndSectionInfoProfileContainer span {
+    margin: 0 10px;
+    font-weight: 600;
+}

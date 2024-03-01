@@ -1,0 +1,248 @@
+* {
+    margin: none;
+    padding: none;
+}
+
+.leftSectionProfile {
+    /* background-color: #6FC2D0; */
+    width: 90%;
+    height: 170vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.FirsSectionInfoProfile {
+    /* background-color: #6fd0b3; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.FirsSectionInfoProfileName {
+    flex: 1;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FirsSectionInfoProfileName p {
+    color: #414141;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.ScndSectionInfoProfile {
+    flex: 0.7;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.editIconDiv {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.editIcon {
+    margin: 8px 15px;
+}
+
+.ScndSectionInfoProfileContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70%;
+    height: 110%;
+    box-shadow: 0 0 15px 1px rgba(129, 129, 129, 0.25), inset 0 0 7px 4px rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+.ScndSectionInfoProfileContainer p {
+    margin: 5px 50px;
+}
+
+.ScndSectionInfoProfileContainer span {
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.thrdSectionInfoProfile {
+    flex: 2;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.thrdSectionInfoProfileContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    max-width: 800px;
+    height: 70%;
+    box-shadow: 0 0 15px 1px rgba(129, 129, 129, 0.25), inset 0 0 7px 4px rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+.thrdSectionInfoProfileContainerH2 {
+    flex: 2;
+    align-self: flex-start;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.inner_carousel {
+    display: flex;
+    /* background: lightblue; */
+}
+
+.carousel {
+    align-self: flex-start;
+    cursor: grab;
+    overflow: hidden;
+    /* background: rgb(230, 173, 173); */
+    margin: 0 40px;
+}
+
+.carouselDiv {
+    flex: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    overflow-x: auto;
+}
+
+
+/*/////////////////////////Card////////////////////////////*/
+
+.Courses {
+    position: relative;
+    left: 0;
+    width: 325px;
+    height: 154px;
+    background-color: white;
+    box-shadow: 0px 0.5px 3px 0px rgba(82, 82, 82, 0.75);
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.display {
+    display: flex;
+}
+
+.imgCourse {
+    width: 90px;
+    height: 80px;
+    border: 2px solid #ABABAB;
+    border-radius: 20px;
+    margin: 20px 10px;
+}
+
+.ListCoursesInfoCourse {
+    display: flex;
+    padding: 25px 5px;
+    width: 190px;
+    flex-direction: column;
+}
+
+.ListCoursesCardCategory {
+    font-size: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    color: #818181;
+}
+
+.ListCoursesCardCategoryHr {
+    background-color: #75D349;
+    width: 50px;
+    height: 1px;
+    border: none;
+    border-radius: 50px;
+}
+
+.ListCoursesCardTitle {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #343434;
+    margin: 5px 0px;
+}
+
+.ListCoursesCardCenterHr {
+    width: 110px;
+    align-self: center;
+    background-color: #E0E0E0;
+    height: 1px;
+    border: none;
+    border-radius: 50px;
+}
+
+.ListCoursesCardLevel {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #343434;
+    margin: 5px 0px;
+}
+
+.ListCoursesCardLevel span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #706F6F;
+    margin: 10px 0px;
+}
+
+.ListCoursesFooter {
+    display: flex;
+    width: 100%;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+
+.ListCoursesCardRating {
+    flex: 2;
+    align-self: center;
+    color: #818181;
+}
+
+.priceFooter {
+    flex: 1;
+    color: #343434;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    align-self: center;
+}
+
+.MuiBox {
+    width: 200px;
+}
+
+
+/*/////////////////////////Card////////////////////////////*/

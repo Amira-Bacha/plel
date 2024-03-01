@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+
+/*///////////////////////*/
+
+
+/*/////////ENDNAV////////////////////*/
+
+.MotherDivCourse {
+    background: url('../assets/courseBack.png') no-repeat top;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainDivCourse {
+    width: 90%;
+    height: auto;
+    /* background-color: #1C4B82; */
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
+}
+
+.leftSectionCourse {
+    /* background-color: #6FC2D0; */
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.FirsSectionInfoCourse {
+    /* background-color: #6fd0b3; */
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.FirsSectionInfoCourseTitle {
+    margin: 20px;
+}
+
+.imgCourse {
+    width: 300px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.imgCourse img {
+    position: relative;
+    height: 200px;
+    margin: auto;
+}
+
+.rightSectionCourse {
+    position: fixed;
+    /* background-color: #1c822d; */
+    width: 25%;
+    height: 60vh;
+    right: 90px;
+    bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scndInfos {
+    padding: 20px 0;
+    background-color: white;
+    height: 90%;
+    width: 90%;
+    position: sticky;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
+    display: block;
+    transition: margin-top 1s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.InfosRefDur {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    font: bolder 20px "Nunito", sans-serif;
+}
+
+.InfosRefDur span {
+    font: 400 20px "Nunito", sans-serif;
+}
+
+.InfosDates {
+    width: 90%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.radioTitle {
+    color: black;
+    font: bolder 20px "Nunito", sans-serif;
+}
+
+.radioLable {
+    color: rgb(95, 95, 95);
+    font: 400 20px "Nunito", sans-serif;
+}
+
+.CoursePriceInfoPage {
+    width: 90%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    font: bold 35px "Nunito", sans-serif;
+}
+
+.CourseButtonsInfoPage {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.CourseButtonsInfoPage button {
+    width: 90%;
+    height: 50px;
+    margin: 5px 10px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font: 500 20px "Nunito", sans-serif;
+    cursor: pointer;
+}
+
+#CourseButtonsInfoPageB1 {
+    background-color: #3867C2;
+    /* transition: background-color 0.5s ease-out; */
+}
+
+#CourseButtonsInfoPageB1Disabled {
+    background-color: grey;
+    cursor: not-allowed;
+    /* transition: background-color 0.5s ease-out; */
+}
+
+#CourseButtonsInfoPageB2 {
+    background-color: #427CFF;
+    opacity: 72%;
+}
+
+#CourseButtonsInfoPageB2Disabled {
+    background-color: grey;
+    cursor: not-allowed;
+    opacity: 72%;
+    /* transition: background-color 0.5s ease-out; */
+}
+
+.ModalComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    text-align: center;
+}
+
+.ModalTitle {
+    text-align: center;
+}
+
+.Date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 94%;
+    margin: 5px 20px;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 0px #4e4e4e;
+    padding: 10px;
+}
+
+.DatePicker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 10px;
+    height: auto;
+}
+
+.DatePickedDiplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    height: 100px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.ValidateIcon {
+    margin: auto 5px;
+    cursor: pointer;
+}
+
+.Btn_save {
+    height: 50px;
+    margin-bottom: 0;
+}
+
+.DescriptionInfoCourse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 20px;
+}
+
+.DescriptionInfoCourseTitle {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px
+}
+
+.DescriptionInfoCourseText {
+    width: 95%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    font: 500 20px "Nunito", sans-serif;
+    border: 2px solid #525252;
+    border-radius: 5px;
+}
+
+
+/*//////////////////FOOTER////////////////////////////*/
+
+.footer {
+    height: 40vh;
+    width: 100%;
+    background-color: #0E2256;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 3fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.FstPart {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.FooterLogo h1 {
+    color: #F8C498;
+    font-size: 40px;
+}
+
+.FooterLogo p {
+    margin-left: 50px;
+    font-size: 12px;
+}
+
+.Adress {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: space-evenly;
+}
+
+.ScPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    color: white;
+    height: 80%;
+}
+
+.ScPart h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ScPart p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.ThrdPart {
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+    color: white;
+}
+
+.ThrdPart h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.social {
+    margin-top: 40px;
+    color: #F8C498;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FrthPart {
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+    color: white;
+}
+
+.FrthPart h1 {
+    font-size: 32px;
+}
+
+.SignUpFooter {
+    display: flex;
+    margin-top: 50px;
+    height: 65px;
+    width: 80%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+}
+
+.SignUpFooter input {
+    height: 65px;
+    width: 300px;
+    background: none;
+    border: none;
+    outline: none;
+    margin: 0 10px;
+    color: white;
+}
+
+.SignUpFooter input::placeholder {
+    color: white;
+}
+
+.SignUpButtonFooter {
+    height: 65px;
+    width: 180px;
+    border-radius: 12px;
+    border: none;
+    background-color: #FFD2A4;
+}
+
+.SignUpButtonFooter p {
+    color: #1d281c;
+    font-size: 18px;
+    font-weight: 900px;
+}
+
+.Accordion {
+    width: 95%;
+    margin: auto;
+}
+
+.AlertOfResult {
+    width: 94%;
+    margin: 10px auto;
+    height: auto;
+    border-radius: 5px;
+    border: 2px dashed rgb(255, 187, 0);
+}
+
+.AlertOfResult h3,
+h2,
+h5 {
+    font-weight: bold;
+    margin: 5px 10px;
+}
+
+.Reponse {
+    display: flex;
+    align-items: center;
+}
+
+.Reponse p {
+    margin: 5px 10px;
+}
+
+.Danger {
+    color: rgb(197, 1, 1)
+}
+
+.Success {
+    color: rgb(0, 135, 9)
+}
